@@ -1,3 +1,5 @@
+package sequential;
+
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -124,5 +126,9 @@ public class Utils {
     }
     return result;
   }
+
+    public static int computeLuminosity(int red, int green, int blue) {
+        return (int) Math.round(0.299 * red + 0.587 * green + 0.114 * blue);
+    }
 
 }
